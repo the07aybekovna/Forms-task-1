@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator Result</title>
+</head>
+<body>
+
+    <h1>Result</h1>
+
+    <h2>
+        {{ calculation.num1 }}
+        {{ calculation.operation }}
+        {{ calculation.num2 }}
+        =
+        {{ calculation.result }}
+    </h2>
+
+    <a href="{% url 'calculator' %}">Recalculate</a>
+
+</body>
+</html>
